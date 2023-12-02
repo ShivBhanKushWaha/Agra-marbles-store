@@ -80,6 +80,11 @@ const AddProductForm = () => {
       return toast.error('No selected images!');
     }
 
+    if(data.inStock == false){
+      setIsLoading(false)
+      return toast.error("Product is Out of stock");
+    }
+
     const handleImageUplaoads = async () => {
       toast('Creating product, Please wait...⏳');
       try{
