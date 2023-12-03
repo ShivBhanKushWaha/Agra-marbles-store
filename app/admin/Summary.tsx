@@ -55,6 +55,9 @@ const Summary:React.FC<SummaryProps> = ({orders,products,users}) => {
                 if(item.status === 'complete'){
                     return acc + item.amount
                 }
+                else if(item.status === 'pending'){
+                    return acc + item.amount
+                }
                 else{
                     return acc
                 }
