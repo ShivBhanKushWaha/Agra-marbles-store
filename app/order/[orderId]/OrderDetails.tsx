@@ -19,7 +19,7 @@ const OrderDetails:React.FC<OrderDetailsProps> = ({order}) => {
             <Heading title="Order Details"/>
         </div>
         <div>Order Id: {order.id} </div>
-        <div>Total Amount: <span className="font-bold">{formatePrice((order.amount)/100)}</span> </div>
+        <div>Total Amount: <span className="font-bold">{formatePrice(order.amount)}</span> </div>
         <div className="flex gap-2 items-center">
             <div>Payment Status:</div>
             <div>
