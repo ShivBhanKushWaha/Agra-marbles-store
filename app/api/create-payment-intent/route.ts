@@ -28,7 +28,7 @@ export async function POST(request:Request){
 
     const body = await request.json();
     const {items, payment_intent_id} = body
-    const total = calculateOrderAmount(items) * 100;
+    const total = calculateOrderAmount(items);
 
     // 100 se multiple krege total me usd ke liye 
     // data to store in the database
