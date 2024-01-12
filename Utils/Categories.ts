@@ -13,10 +13,6 @@ export const categories = [
       icon: AiFillSlackSquare,
     },
     {
-      label: "Marbles",
-      icon: MdCabin,
-    },
-    {
       label: "Onyx",
       icon: AiFillMediumSquare,
     },
