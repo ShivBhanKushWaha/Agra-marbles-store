@@ -1,4 +1,4 @@
-"use c"
+"use client"
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation"
 import queryString from "query-string";
